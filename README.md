@@ -1,16 +1,45 @@
-# README
+# Pomodoro
+A simple pomodoro timer write in Wails and Svelte.
 
-## About
+[Click to Download](https://github.com/andycai/pomodoro/releases)
 
-This is the official Wails Svelte-TS template.
+- [macOs](https://github.com/andycai/pomodoro/releases/download/v0.6.0/Pomodoro_0.6.0_x64.dmg)
+- [Windows](https://github.com/andycai/pomodoro/releases/download/v0.6.0/Pomodoro_0.6.0_x64-setup.exe)
+- [Linux](https://github.com/andycai/pomodoro/releases/download/v0.6.0/pomodoro_0.6.0_amd64.deb)
 
-## Live Development
+## Screenshots
 
-To run in live development mode, run `wails dev` in the project directory. This will run a Vite development
-server that will provide very fast hot reload of your frontend changes. If you want to develop in a browser
-and have access to your Go methods, there is also a dev server that runs on http://localhost:34115. Connect
-to this in your browser, and you can call your Go code from devtools.
+<img src="./screenshots/screenshot.png" width="128" height="200" alt="Screenshot of Pomodoro">
 
-## Building
+<img src="./screenshots/screenshot_break.png" width="128" height="200" alt="Screenshot of Pomodoro">
 
-To build a redistributable, production mode package, use `wails build`.
+# Tauri + Svelte + Typescript
+
+This template should help get you started developing with Tauri, Svelte and Typescript in Vite.
+
+## Recommended IDE Setup
+
+- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+
+## Install Wails support
+
+Wails has a number of common dependencies that are required before installation:
+
+- Go 1.18+
+- NPM (Node 15+)
+
+```bash
+go install github.com/wailsapp/wails/v2/cmd/wails@latest
+```
+
+## Run project
+
+```bash
+wails dev
+```
+
+## Build project
+
+```bash
+wails build 
+`````
