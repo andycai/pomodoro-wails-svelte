@@ -13,13 +13,13 @@ A simple pomodoro timer write in Wails and Svelte.
 
 <img src="./screenshots/screenshot_break.png" width="128" height="200" alt="Screenshot of Pomodoro">
 
-# Tauri + Svelte + Typescript
+# Wails + Svelte + Typescript
 
-This template should help get you started developing with Tauri, Svelte and Typescript in Vite.
+This template should help get you started developing with Wails, Svelte and Typescript in Vite.
 
 ## Recommended IDE Setup
 
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+- [VS Code](https://code.visualstudio.com/) 
 
 ## Install Wails support
 
