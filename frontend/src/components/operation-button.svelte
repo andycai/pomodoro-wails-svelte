@@ -1,10 +1,10 @@
 <script lang="ts">
-  import PauseCircleOutline from "svelte-material-icons/PauseCircleOutline.svelte";
-  import PlayCircleOutline from "svelte-material-icons/PlayCircleOutline.svelte";
-  import { Status, INTERVAL } from "../config";
-  import { action, status, timer } from "../store/store";
-  import { onDestroy } from "svelte";
-  import { playAudio, playEndAudio } from "../utils";
+  import { Status, INTERVAL } from "../config"
+  import { action, status, timer } from "../store/store"
+  import { onDestroy } from "svelte"
+  import { playAudio, playEndAudio } from "../utils"
+  import Pause from "../icons/pause.svelte"
+  import Play from "../icons/play.svelte"
 
 //   console.log("render Operaction")
 	const unsubscribe = status.subscribe((newValue) => {
@@ -26,8 +26,8 @@
 
 <button class="flex flex-row justify-center basis-1/2" title="Play or Pause" on:click={action.tick}>
 {#if $status === Status.Tick}
-	<PauseCircleOutline />
+	<Pause width={22} height={22} />
 {:else}
-	<PlayCircleOutline />
+	<Play width={22} height={22} />
 {/if}
 </button>

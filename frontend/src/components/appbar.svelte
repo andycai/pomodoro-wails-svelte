@@ -1,7 +1,7 @@
 <script lang="ts">
-  import PomodoroCount from "./pomodoro-count.svelte";
-  import Close from "svelte-material-icons/CloseCircle.svelte";
-  import { Quit } from "../../wailsjs/runtime/runtime.js";
+  import PomodoroCount from "./pomodoro-count.svelte"
+  import { Quit } from "../../wailsjs/runtime/runtime.js"
+  import Close from "../icons/close.svelte"
 
   //
 </script>
