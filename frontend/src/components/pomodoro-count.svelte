@@ -1,6 +1,6 @@
 <script lang="ts">
   import { today, total, status } from "../store/store"
-  import { changeAudio, playAudio } from "../utils"
+  import { changeAudio, isMute, playAudio } from "../utils"
   import { Status } from "../config"
   import Volume from "../icons/volume.svelte"
   import VolumeMute from "../icons/volume-mute.svelte"
@@ -9,7 +9,8 @@
 
   function change() {
     if ($status === Status.Tick) {
-      musicOff = !changeAudio()
+      changeAudio()
+      musicOff = isMute()
       playAudio(!musicOff)
     }
   }
